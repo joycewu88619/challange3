@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  font-size: 12px;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224, 23%, 55%);
+}
+
+H1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  height: 100vh;
+  background: hsl(225, 100%, 94%);
+}
+.outer .bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer .bg .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 315px;
+}
+.outer .bg .container .banner img {
+  width: 100%;
+}
+.outer .bg .container .header {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 30px 0;
+}
+.outer .bg .container .description {
+  text-align: center;
+  padding: 0 20px;
+}
+.outer .bg .container .plan {
+  background: hsl(225, 100%, 94%);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.outer .bg .container .plan .charge {
+  display: flex;
+}
+.outer .bg .container .plan .charge .charge_detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+  padding: 7px 0;
+}
+.outer .bg .container .plan .charge .charge_detail h2 {
+  color: hsl(223, 47%, 23%);
+}
+.outer .bg .container .plan .change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outer .bg .container .plan .change h3 {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+.outer .bg .container .plan .change h3:hover {
+  color: #8b82ed;
+  text-decoration: none;
+}
+.outer .bg .container .button1 {
+  width: 80%;
+  text-align: center;
+  background: hsl(245, 75%, 52%);
+  padding: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 15px 10px hsl(225, 100%, 94%);
+}
+.outer .bg .container .button1:hover {
+  background: #8b82ed;
+}
+.outer .bg .container .button1 h3 {
+  color: white;
+}
+.outer .bg .container .button2 {
+  width: 80%;
+  text-align: center;
+  margin: 25px 0;
+}
+.outer .bg .container .button2 h3 {
+  color: hsl(224, 23%, 55%);
+}
+.outer .bg .container .button2 h3:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .outer .bg {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+  .outer .bg .container .description p {
+    line-height: 1.5;
+  }
+  .outer .bg .container .plan {
+    padding: 10px;
+  }
+  .outer .bg .container .plan .charge .charge_detail {
+    margin-left: 5px;
+    padding: 5px;
+  }
+}/*# sourceMappingURL=all.css.map */
